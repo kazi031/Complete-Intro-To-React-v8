@@ -1,0 +1,5 @@
+npm init -y => creates a package.json where it stores all the dependencies.
+
+prettier catches all of your formatting problems and ESLint is going to catch very simple JS 
+problems.
+
