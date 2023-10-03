@@ -1,0 +1,1 @@
+In Visual Studio Code, you can select multiple words with the same text using Ctrl+D
