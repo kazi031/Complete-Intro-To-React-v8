@@ -1,7 +1,9 @@
 // import React from "react";
 import { createRoot } from "react-dom/client";
 // import Pet from "./Pet";
+import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import SearchParams from "./SearchParams";
+import Details from "./Details";
 
 const App = () => {
   // return React.createElement("div", {}, [
@@ -23,10 +25,15 @@ const App = () => {
   //   }),
   // ]);
   return (
-    <div>
-      <h1>Adopt Me!</h1>
-      <SearchParams />
-    </div>
+    <BrowserRouter>
+      <header>
+        <Link to="/">Adopt Me!</Link>
+      </header>
+      <Routes>
+        <Route path="/details/:id" element={<Details />} />
+        <Route path="/" element={<SearchParams />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
