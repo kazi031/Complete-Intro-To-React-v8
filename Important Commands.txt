@@ -3,6 +3,9 @@ npm init -y => creates a package.json where it stores all the dependencies.
 prettier catches all of your formatting problems and ESLint is going to catch very simple JS 
 problems.
 
+The hardest part of react is useEffect. Its gonna have the most bugs.
+*Minimize effects in your code.
+
 
 tools:
  npm i -D vite@3.1.4 @vitejs/plugin-react@2.1.0
@@ -14,3 +17,5 @@ npm i react@18.2.0 react-dom@18.2.0
 npm install -D eslint-plugin-import@2.26.0 eslint-plugin-jsx-a11y@6.6.1 eslint-plugin-react@7.31.8
 
 npm install -D eslint-plugin-react-hooks@4.6.0
+
+npm i @tanstack/react-query@4.10.1
