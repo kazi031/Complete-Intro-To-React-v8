@@ -1,1 +1,6 @@
 An absolutely key concept for you to grasp is hooks rely on this strict ordering. As such, do not put hooks inside if statements or loops. If you do, you'll have insane bugs that involve useState returning the wrong state. If you see useState returning the wrong piece of state, this is likely what you did.
+
+
+useRef()- servives render cycles - used to track a object in different render cycle.
+memo() - used to only render when the props are changed.
+
