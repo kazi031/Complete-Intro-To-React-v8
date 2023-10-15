@@ -1,0 +1,9 @@
+m - margin
+p - padding
+ml - margin left
+pl - padding left
+pb - padding bottom
+-m - negative margin
+
+mx - margin left and right
+my = margin top and bottom
