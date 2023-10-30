@@ -5,7 +5,6 @@ import { useState } from "react";
 import AdoptedPetContext from "./AdoptedPetContext";
 import Details from "./Details";
 import SearchParams from "./SearchParams";
-import Home from "./pages/Home";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -17,16 +16,21 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
+  const adoptedPet = useState(null);
   return (
     <div>
       <BrowserRouter>
+        <AdoptedPetContext.Provider value={adoptedPet}>
           <QueryClientProvider client={queryClient}>
-                  
+            <header>
+              <Link to="/">Adopt Me!</Link>
+            </header>
             <Routes>
-              {/* <Route path="/details/:id" element={<Details />} /> */}
-              <Route path="/" element={<Home />} />
+              <Route path="/details/:id" element={<Details />} />
+              <Route path="/" element={<SearchParams />} />
             </Routes>
           </QueryClientProvider>
+        </AdoptedPetContext.Provider>
       </BrowserRouter>
     </div>
   );

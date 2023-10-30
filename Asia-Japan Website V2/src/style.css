@@ -4,13 +4,23 @@
 
 @layer base {
   body {
-    font-family: "Comic Sans MS";
+    font-family: "Inter", sans-serif;
   }
 }
 
 @layer components {
   .search-input {
     @apply mb-5 block w-60;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
 
